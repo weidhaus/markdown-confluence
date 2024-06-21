@@ -64,6 +64,6 @@ async function main() {
 
 // Call the main function
 main().catch((error) => {
-	console.error(chalk.red(boxen(`Error: ${error.message}`, { padding: 1 })));
+	console.error(chalk.red(boxen(`Error: ${error.message} File: ${file.node.file.absoluteFilePath}`, { padding: 1 })));
 	process.exit(1);
 });
